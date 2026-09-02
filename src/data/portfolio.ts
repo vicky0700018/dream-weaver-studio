@@ -1,0 +1,128 @@
+import { img } from "./images";
+import type { Project } from "./types";
+
+export const categories = [
+  "Birthdays",
+  "Kids Events",
+  "Weddings",
+  "Haldi",
+  "Mehendi",
+  "Corporate",
+  "Private Events",
+  "Catering",
+];
+
+export const portfolio: Project[] = [
+  {
+    id: "p1",
+    title: "Blush & Gold Birthday Soirée",
+    category: "Birthdays",
+    description:
+      "A pastel blush and gold birthday setup with a floral wall, balloon arch and a styled lounge seating area.",
+    location: "Kharadi, Pune",
+    date: "2025",
+    theme: "Blush & Gold",
+    images: [img.bannerBirthday, img.balloon, img.privateEvent],
+    services: ["Balloon Art", "Floral Backdrop", "Stage Decoration", "Photography"],
+    highlights: ["14 ft floral wall", "Organic balloon arch", "Custom neon signage"],
+    active: true,
+  },
+  {
+    id: "p2",
+    title: "Rainbow Wonderland Kids Party",
+    category: "Kids Events",
+    description:
+      "A colourful rainbow-themed first birthday with a dessert table, balloon garland and playful props.",
+    location: "Viman Nagar, Pune",
+    date: "2025",
+    theme: "Rainbow Wonderland",
+    images: [img.kids, img.balloon],
+    services: ["Theme Decoration", "Dessert Table", "Balloon Garland", "Entertainment"],
+    highlights: ["Custom cake table", "Kids activity corner", "Return-gift styling"],
+    active: true,
+  },
+  {
+    id: "p3",
+    title: "Ivory Rose Wedding Stage",
+    category: "Weddings",
+    description:
+      "An elegant ivory and blush wedding stage with drapes, cascading florals and warm ambience lighting.",
+    location: "Mundhwa, Pune",
+    date: "2024",
+    theme: "Ivory Rose",
+    images: [img.bannerWedding, img.privateEvent, img.lighting],
+    services: ["Stage Decoration", "Floral Design", "Lighting", "Catering"],
+    highlights: ["Hand-set floral canopy", "Crystal chandelier", "600 guest catering"],
+    active: true,
+  },
+  {
+    id: "p4",
+    title: "Marigold Haldi Morning",
+    category: "Haldi",
+    description:
+      "A bright outdoor Haldi with marigold strings, yellow and orange drapes and a rustic seating setup.",
+    location: "Wagholi, Pune",
+    date: "2025",
+    theme: "Marigold Sunshine",
+    images: [img.haldi, img.mehendi],
+    services: ["Floral Decoration", "Drapes & Canopy", "Photography"],
+    highlights: ["3000 marigold strings", "Open-air canopy", "Traditional props"],
+    active: true,
+  },
+  {
+    id: "p5",
+    title: "Rani Pink Mehendi Afternoon",
+    category: "Mehendi",
+    description:
+      "A festive Mehendi with hanging umbrellas, rani pink drapes and floral swings for the bride.",
+    location: "Kalyani Nagar, Pune",
+    date: "2024",
+    theme: "Umbrella Festivity",
+    images: [img.mehendi, img.haldi],
+    services: ["Venue Decoration", "Floral Swing", "Sound & Lighting"],
+    highlights: ["Hanging umbrella ceiling", "Bridal floral swing", "Live music corner"],
+    active: true,
+  },
+  {
+    id: "p6",
+    title: "Annual Day Corporate Gala",
+    category: "Corporate",
+    description:
+      "A polished corporate annual-day setup with stage branding, banquet seating and lighting design.",
+    location: "Hadapsar, Pune",
+    date: "2024",
+    theme: "Modern Gala",
+    images: [img.corporate, img.lighting],
+    services: ["Stage Branding", "Sound & Lighting", "Catering", "Coordination"],
+    highlights: ["LED backdrop", "Awards stage", "450 guest dinner"],
+    active: true,
+  },
+  {
+    id: "p7",
+    title: "Rose Candlelight Anniversary",
+    category: "Private Events",
+    description:
+      "An intimate anniversary celebration with rose centrepieces, candles and soft drape lighting.",
+    location: "Kharadi, Pune",
+    date: "2025",
+    theme: "Rose Candlelight",
+    images: [img.privateEvent, img.balloon],
+    services: ["Floral Decoration", "Table Styling", "Catering"],
+    highlights: ["Candlelit dinner setup", "Rose centrepieces", "Curated menu"],
+    active: true,
+  },
+  {
+    id: "p8",
+    title: "Multi-Cuisine Wedding Buffet",
+    category: "Catering",
+    description:
+      "A live multi-cuisine buffet with starters, main course counters and a dessert station.",
+    location: "Kharadi, Pune",
+    date: "2025",
+    theme: "Live Counters",
+    images: [img.catering, img.corporate],
+    services: ["Catering", "Live Counters", "Service Staff"],
+    highlights: ["7 live counters", "Veg & non-veg menus", "Dessert station"],
+    active: true,
+  },
+];
