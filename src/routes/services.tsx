@@ -68,7 +68,7 @@ function ServicesPage() {
                 </ul>
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <span className="rounded-full bg-peach px-4 py-1.5 text-sm font-semibold text-magenta">
-                    {s.priceRange}
+                    Custom Packages
                   </span>
                   <Link to="/contact" className="btn-primary !px-6 !py-2.5 !text-sm">
                     Enquire Now

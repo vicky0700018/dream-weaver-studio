@@ -34,7 +34,6 @@ function ContactPage() {
     { label: "Phone", value: `${s.phone1} · ${s.phone2}`, icon: "📞" },
     { label: "Email", value: s.email, icon: "✉️" },
     { label: "Working Hours", value: s.hours, icon: "🕘" },
-    { label: "Service Areas", value: s.serviceAreas, icon: "🗺️" },
   ];
 
   return (

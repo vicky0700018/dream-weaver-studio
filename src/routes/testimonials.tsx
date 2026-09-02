@@ -51,7 +51,6 @@ function TestimonialsPage() {
               <footer className="mt-6 border-t border-border pt-4">
                 <p className="text-sm font-bold text-foreground">{t.name}</p>
                 <p className="text-xs text-magenta">{t.eventType}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{t.date}</p>
               </footer>
             </blockquote>
           ))}
