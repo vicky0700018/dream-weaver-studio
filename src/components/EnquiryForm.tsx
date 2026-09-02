@@ -27,11 +27,11 @@ const empty = {
   name: "",
   phone: "",
   email: "",
-  eventType: eventTypes[0],
+  eventType: eventTypes[0]!,
   eventDate: "",
   guests: "",
   venue: "",
-  budget: budgets[1],
+  budget: budgets[1]!,
   requirements: "",
 };
 
@@ -47,11 +47,11 @@ export function EnquiryForm({ compact = false }: { compact?: boolean }) {
 
   const validate = () => {
     const e: Record<string, string> = {};
-    if (form.name.trim().length < 2) e.name = "Please enter your full name.";
-    if (!/^[+\d][\d\s-]{7,15}$/.test(form.phone.trim())) e.phone = "Enter a valid phone number.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) e.email = "Enter a valid email.";
-    if (!form.eventDate) e.eventDate = "Please pick an event date.";
-    if (form.requirements.trim().length < 5) e.requirements = "Tell us a little about your event.";
+    if (form.name.trim().length < 2) e['name'] = "Please enter your full name.";
+    if (!/^[+\d][\d\s-]{7,15}$/.test(form.phone.trim())) e['phone'] = "Enter a valid phone number.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) e['email'] = "Enter a valid email.";
+    if (!form.eventDate) e['eventDate'] = "Please pick an event date.";
+    if (form.requirements.trim().length < 5) e['requirements'] = "Tell us a little about your event.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };

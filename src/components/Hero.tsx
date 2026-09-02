@@ -31,7 +31,7 @@ export function Hero() {
     );
   }
 
-  const active = slides[Math.min(index, slides.length - 1)];
+  const active = slides[Math.min(index, slides.length - 1)]!;
   const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length);
 
   return (
